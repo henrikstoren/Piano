@@ -53,6 +53,7 @@ namespace Piano
                 
 
                 // Play a chord
+<<<<<<< HEAD
 
                 //if (count%2 == 0)
                 //{
@@ -69,6 +70,9 @@ namespace Piano
                 
                 //count += 1;
                 // Varying between F major and G major every other
+=======
+                // Varying between F major and G major every other 
+>>>>>>> 4f6964d4e0e57f55e9b03057129e2ddb795c5ec6
                 else if (count%2 == 0)
                 {
 //                       F major
