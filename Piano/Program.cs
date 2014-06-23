@@ -23,7 +23,6 @@ namespace Piano
                 int freq = a*70;
                 //dette er teit
                 //nei det er det ikke!!!!
-                //joså
                 if (c == 'i')
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
