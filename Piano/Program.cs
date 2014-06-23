@@ -53,24 +53,26 @@ namespace Piano
                 
 
                 // Play a chord
+<<<<<<< HEAD
 
-                if (count%2 == 0)
-                {
-                    MidiPlayer.Play(new NoteOn(0, 0, "C4", 127));
-                    MidiPlayer.Play(new NoteOn(0, 0, "F4", 127));
-                    MidiPlayer.Play(new NoteOn(0, 0, "A4", 127));
-                }
-                else
-                {
-                    MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
-                    MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
-                    MidiPlayer.Play(new NoteOn(0, 0, "D4", 127));
-                }}
+                //if (count%2 == 0)
+                //{
+                  //  MidiPlayer.Play(new NoteOn(0, 0, "C4", 127));
+                    //MidiPlayer.Play(new NoteOn(0, 0, "F4", 127));
+                    //MidiPlayer.Play(new NoteOn(0, 0, "A4", 127));
+                //}
+                //else
+                //{
+                   // MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
+                    //MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
+                    //MidiPlayer.Play(new NoteOn(0, 0, "D4", 127));
+                //}}
                 
-                count += 1;
+                //count += 1;
                 // Varying between F major and G major every other
-
-
+=======
+                // Varying between F major and G major every other 
+>>>>>>> 4f6964d4e0e57f55e9b03057129e2ddb795c5ec6
                 else if (count%2 == 0)
                 {
 //                       F major
