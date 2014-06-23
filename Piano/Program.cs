@@ -28,19 +28,19 @@ namespace Piano
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
                 }
-                else if (c == 'o')
+                if (c == 'o')
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "C5", 127));
                 }
-                else if (c == 'p')
+                if (c == 'p')
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "D5", 127));
                 }
-                else if (c == 'u')
+                if (c == 'u')
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "A4", 127));
                 }
-                else if (c == 'y')
+                if (c == 'y')
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
                 }
@@ -48,20 +48,20 @@ namespace Piano
                 
 
                 // Play a chord
-//                if (count%2 == 0)
-//                {
-//                    MidiPlayer.Play(new NoteOn(0, 0, "C4", 127));
-//                    MidiPlayer.Play(new NoteOn(0, 0, "F4", 127));
-//                    MidiPlayer.Play(new NoteOn(0, 0, "A4", 127));
-//                }
-//                else
-//                {
-//                    MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
-//                    MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
-//                    MidiPlayer.Play(new NoteOn(0, 0, "D4", 127));
-//                }
-//                
-//                count += 1;
+                //if (count%2 == 0)
+                //{
+                  //  MidiPlayer.Play(new NoteOn(0, 0, "C4", 127));
+                    //MidiPlayer.Play(new NoteOn(0, 0, "F4", 127));
+                    //MidiPlayer.Play(new NoteOn(0, 0, "A4", 127));
+                //}
+                //else
+                //{
+                   // MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
+                    //MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
+                    //MidiPlayer.Play(new NoteOn(0, 0, "D4", 127));
+                //}}
+                
+                //count += 1;
 
 
 //                MidiPlayer.Play(new NoteOn(0, 15, "C4", 127));
