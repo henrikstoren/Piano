@@ -43,7 +43,7 @@ namespace Piano
                     MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
                 }
 
-
+                //Hei og hå!!!!!!!
 
                 // Play a chord
 //                if (count%2 == 0)
