@@ -39,7 +39,7 @@ namespace Piano
                 }
                 if (c == 'p')
                 {
-                    MidiPlayer.Play(new NoteOn(0, 0, "D5", 127));
+                    MidiPlayer.Play(new NoteOn(0, 0, "D4", 127));
                 }
                 if (c == 'u')
                 {
@@ -55,7 +55,7 @@ namespace Piano
 
                 // Play a chord
 
-                if (c == 'r' && count%2 == 0)
+                if (c == 'r')
 
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "C4", 127));
@@ -63,7 +63,7 @@ namespace Piano
                     MidiPlayer.Play(new NoteOn(0, 0, "A4", 127));
                     count += 1;
                 }
-                if(c =='t' && count == 1)
+                if(c =='t')
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
                     MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
