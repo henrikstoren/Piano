@@ -8,9 +8,9 @@ using Toub.Sound.Midi;
 
 namespace Piano
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             MidiPlayer.OpenMidi();
             ConsoleKeyInfo k;
@@ -26,7 +26,7 @@ namespace Piano
                 //nei det er det ikke!!!!
                 //joså
 
-                
+
 
 
                 if (c == 'i')
@@ -50,40 +50,42 @@ namespace Piano
                     MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
                 }
 
-                
 
-                else if (count%2 == 0)
+
+
+                // Play a chord
+
+                if (c == 'r' && count%2 == 0)
+
                 {
-//                       F major
                     MidiPlayer.Play(new NoteOn(0, 0, "C4", 127));
                     MidiPlayer.Play(new NoteOn(0, 0, "F4", 127));
                     MidiPlayer.Play(new NoteOn(0, 0, "A4", 127));
                     count += 1;
                 }
-                else if(count%2 == 1)
+                if(c =='t' && count == 1)
                 {
-//                       G major
                     MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
                     MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
                     MidiPlayer.Play(new NoteOn(0, 0, "D4", 127));
                     count += 1;
                 }
-                
-                
+            }
+
+
 
 
 
 //                MidiPlayer.Play(new NoteOn(0, 15, "C4", 127));
 //                MidiPlayer.Play(new NoteOn(0, 15, "F4", 127));
 //                MidiPlayer.Play(new NoteOn(0, 15, "A4", 127));
-                // Wait x milliseconds before we stop the note.
-                // May not be useful when we want to play consecutive/simultanous notes.
+            // Wait x milliseconds before we stop the note.
+            // May not be useful when we want to play consecutive/simultanous notes.
 //                System.Threading.Thread.Sleep(5000);
 //                MidiPlayer.Play(new NoteOff(0, 15, "C4", 127));
 //                MidiPlayer.Play(new NoteOff(0, 15, "F4", 127));
 //                MidiPlayer.Play(new NoteOff(0, 15, "A4", 127));
 //                Console.ForegroundColor = ConsoleColor.DarkGreen;
-            }
         }
     }
 }
