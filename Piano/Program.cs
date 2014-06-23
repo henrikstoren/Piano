@@ -21,7 +21,7 @@ namespace Piano
                 char c = k.KeyChar;
                 int a = (int) c;
                 int freq = a*70;
-
+                //dette er teit
                 if (c == 'i')
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
