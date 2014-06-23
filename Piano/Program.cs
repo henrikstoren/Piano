@@ -39,7 +39,7 @@ namespace Piano
                 }
                 if (c == 'p')
                 {
-                    MidiPlayer.Play(new NoteOn(0, 0, "D4", 127));
+                    MidiPlayer.Play(new NoteOn(0, 0, "D5", 127));
                 }
                 if (c == 'u')
                 {
