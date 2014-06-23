@@ -54,14 +54,14 @@ namespace Piano
 
                 // Play a chord
 
-                if (count%2 == 0)
+                if (c == 'r' && count%2 == 0)
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "C4", 127));
                     MidiPlayer.Play(new NoteOn(0, 0, "F4", 127));
                     MidiPlayer.Play(new NoteOn(0, 0, "A4", 127));
                     count += 1;
                 }
-                else
+                if(c =='t' && count == 1)
                 {
                     MidiPlayer.Play(new NoteOn(0, 0, "G4", 127));
                     MidiPlayer.Play(new NoteOn(0, 0, "B4", 127));
